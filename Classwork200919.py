@@ -69,101 +69,101 @@
 # головної, яка пропонує вибрати дію та додаткових, які реалізовують вибрані дії, калькулятор працює доти, поки ми не виберемо дію вийти з калькулятора, 
 # після виходу, користувач отримує повідомлення з подякою за вибір нашого програмного продукту!!!
 
-def sum_of_numbers(a,b):
-    """This function calculates sum of entered numbers"""
-    a=a+b
-    return a
+# def sum_of_numbers(a,b):
+#     """This function calculates sum of entered numbers"""
+#     a=a+b
+#     return a
 
-def multiplication_(a,b):
-    """This function calculates multiplication of entered numbers"""
-    a=a*b
-    return a
+# def multiplication_(a,b):
+#     """This function calculates multiplication of entered numbers"""
+#     a=a*b
+#     return a
 
-def subtraction_(a,b):
-    """This function calculates subtraction between two values"""
-    a=a-b
-    return a
+# def subtraction_(a,b):
+#     """This function calculates subtraction between two values"""
+#     a=a-b
+#     return a
 
-def division_(a,b):
-    """This function calculates division between two values"""
-    a=a/b
-    return a
+# def division_(a,b):
+#     """This function calculates division between two values"""
+#     a=a/b
+#     return a
 
 
-# Calculator
-h=input("Hello, please type start for the next step, or exit for the end:")
-if h=="start":
-    a=int(input("Please choose your first number:"))
-    s=input("Please choose the operation between +, *, -, / :")
-    b=int(input("Please choose your second number:"))
-    while True:
-        if s=="+" or s=="*" or s=="-"or s=="/":
-            while True:
-                if s=="+":
-                    print(sum_of_numbers(a,b))
-                    s=input("If you want exit out of this program tape EXIT or choose another operation:")
-                    if s=="exit":
-                        break
-                    if s=="+" or s=="*" or s=="-" or s=="/":
-                        a=int(input("Please choose your first number:"))
-                        b=int(input("Please choose your second number:"))
-                        continue
-                    else:
-                        break
-                if s=="*":
-                    print(multiplication_(a,b))
-                    s=input("If you want exit out of this program tape EXIT or choose another operation:")
-                    if s=="exit":
-                        break
-                    if s=="+" or s=="*" or s=="-" or s=="/":
-                        a=int(input("Please choose your first number:"))
-                        b=int(input("Please choose your second number:"))
-                        continue
-                    else:
-                        break
-                if s=="-":
-                    print(subtraction_(a,b))
-                    s=input("If you want exit out of this program tape EXIT or choose another operation:")
-                    if s=="exit":
-                        break
-                    if s=="+" or s=="*" or s=="-" or s=="/":
-                        a=int(input("Please choose your first number:"))
-                        b=int(input("Please choose your second number:"))
-                        continue
-                    else:
-                        break
-                if s=="/":
-                    while True:
-                        if a>0 and b>0:
-                            print(division_(a,b))
-                            s=input("If you want exit out of this program tape EXIT or choose another operation:")
-                            if s=="/":
-                                a=int(input("Please choose your first number:"))
-                                b=int(input("Please choose your second number:"))
-                                continue
-                            if s=="exit":
-                                break
-                            if s=="+" or s=="*" or s=="-":
-                                a=int(input("Please choose your first number:"))
-                                b=int(input("Please choose your second number:"))
-                                break
-                            else:
-                                break
-                        if a==0 or b==0:
-                            print("EROR:Please type your values without 0 if you want do divison operation:")
-                            a=int(input("Please choose your first number:"))
-                            b=int(input("Please choose your second number:"))
-                            continue
-                        else:
-                            break
-                else:
-                    break
-        if s=="exit":
-                print("Thank you that you choose our software. Have a nice day.")
-                break
-        else:
-            print("Something gone wrong please try again.")
-            break
-else:
-    print("Thank you that you choose our software. Have a nice day.")
+# # Calculator
+# h=input("Hello, please type start for the next step, or exit for the end:")
+# if h=="start":
+#     a=int(input("Please choose your first number:"))
+#     s=input("Please choose the operation between +, *, -, / :")
+#     b=int(input("Please choose your second number:"))
+#     while True:
+#         if s=="+" or s=="*" or s=="-"or s=="/":
+#             while True:
+#                 if s=="+":
+#                     print(sum_of_numbers(a,b))
+#                     s=input("If you want exit out of this program tape EXIT or choose another operation:")
+#                     if s=="exit":
+#                         break
+#                     if s=="+" or s=="*" or s=="-" or s=="/":
+#                         a=int(input("Please choose your first number:"))
+#                         b=int(input("Please choose your second number:"))
+#                         continue
+#                     else:
+#                         break
+#                 if s=="*":
+#                     print(multiplication_(a,b))
+#                     s=input("If you want exit out of this program tape EXIT or choose another operation:")
+#                     if s=="exit":
+#                         break
+#                     if s=="+" or s=="*" or s=="-" or s=="/":
+#                         a=int(input("Please choose your first number:"))
+#                         b=int(input("Please choose your second number:"))
+#                         continue
+#                     else:
+#                         break
+#                 if s=="-":
+#                     print(subtraction_(a,b))
+#                     s=input("If you want exit out of this program tape EXIT or choose another operation:")
+#                     if s=="exit":
+#                         break
+#                     if s=="+" or s=="*" or s=="-" or s=="/":
+#                         a=int(input("Please choose your first number:"))
+#                         b=int(input("Please choose your second number:"))
+#                         continue
+#                     else:
+#                         break
+#                 if s=="/":
+#                     while True:
+#                         if a>0 and b>0:
+#                             print(division_(a,b))
+#                             s=input("If you want exit out of this program tape EXIT or choose another operation:")
+#                             if s=="/":
+#                                 a=int(input("Please choose your first number:"))
+#                                 b=int(input("Please choose your second number:"))
+#                                 continue
+#                             if s=="exit":
+#                                 break
+#                             if s=="+" or s=="*" or s=="-":
+#                                 a=int(input("Please choose your first number:"))
+#                                 b=int(input("Please choose your second number:"))
+#                                 break
+#                             else:
+#                                 break
+#                         if a==0 or b==0:
+#                             print("EROR:Please type your values without 0 if you want do divison operation:")
+#                             a=int(input("Please choose your first number:"))
+#                             b=int(input("Please choose your second number:"))
+#                             continue
+#                         else:
+#                             break
+#                 else:
+#                     break
+#         if s=="exit":
+#                 print("Thank you that you choose our software. Have a nice day.")
+#                 break
+#         else:
+#             print("Something gone wrong please try again.")
+#             break
+# else:
+#     print("Thank you that you choose our software. Have a nice day.")
 
