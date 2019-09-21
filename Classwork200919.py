@@ -18,6 +18,8 @@
 #     """This function returns maximum in output between two numbers"""
 #     if a>b:
 #         print(a)
+#     if a==b:
+#         print("The values ​​are equal")
 #     else:
 #         return b
 # print(max_numbers(5,9))
@@ -25,35 +27,40 @@
 
 #44.  Написати програму, яка обчислює площу прямокутника, трикутника та кола (написати три функції для обчислення площі, і викликати їх в головній програмі в залежності від вибору користувача)
 # def rectangel(a,b):
-# """This function calculate area of rectangel"""
+#     """This function calculate area of rectangel"""
 #     s_rectangel=a*b
 #     return s_rectangel
 
 # def triangle(a,b,c):
-# """This function calculate area of triangle"""
+#     """This function calculate area of triangle"""
 #     p=(a+b+c)/2
 #     return ((p*(p-a)*(p-b)*(p-c))** 0.5)
 
 # def circle(r):
-# """This function calculate area of circle"""
+#     """This function calculate area of circle"""
 #     return(3.14*(r**2))
 
 # area=input("Please enter what area of figure you want to count:")
-# if area=="rectangel":
-#     a=int(input("Enter the lenght of the first side:"))
-#     b=int(input("Enter the lenght of another side:"))
-#     print(rectangel(a,b))
-# elif area=="triangle":
-#     a=int(input("Enter the lenght of the side a:"))
-#     b=int(input("Enter the lenght of the side b:"))
-#     c=int(input('Enter the lenght of the side c:'))
-#     print(triangle(a,b,c))
-# elif area=="circle":
-#     r=int(input("Please enter the radius of circle:"))
-#     print(circle(r))
+# if area=="rectangel" or area=="triangle" or area=="circle":
+#     while True:
+#         if area=="rectangel":
+#             a=int(input("Enter the lenght of the first side:"))
+#             b=int(input("Enter the lenght of another side:"))
+#             print(rectangel(a,b))
+#             break
+#         elif area=="triangle":
+#             a=int(input("Enter the lenght of the side a:"))
+#             b=int(input("Enter the lenght of the side b:"))
+#             c=int(input('Enter the lenght of the side c:'))
+#             print(triangle(a,b,c))
+#             break
+#         elif area=="circle":
+#             r=int(input("Please enter the radius of circle:"))
+#             print(circle(r))
+#             break
 # else:
 #     print("EROR: You are entering inncorect value, please try again")
-#     area=input("Please enter what area of figure you want to count:")
+    
 
 # 55.  Написати функцію, яка обчислює суму цифр введеного числа.
 # def list_of_numbers(*kwargs):
